@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddd780f9a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="musicPlayer">
+      <nav>
+        <div class="circle">
+            <i class="fa-solid fa-angles-left"></i>
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src="https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=400" alt="song" class="songImage">
+      
+        <h1>Nights</h1>
+        <p>Avinci</p>
+        <audio  id="song">
+            <source src="Avicii_-_The_Nights (1).mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+            <div>
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div onclick="playPause()">
+                <i class="fa-solid fa-play" id="ctrlIcon"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 
